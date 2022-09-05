@@ -1,0 +1,117 @@
+html, body { 
+    --color-1: #16213E;
+    --color-2: #E94560; 
+    --color-3: white; 
+    --color-4: #E94560; 
+    --color-5: #0F3460;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #533483;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 50px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-3);
+    margin: 0 auto;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222222;
+}
+
+#rollBtn {
+    background-color: var(--color-5);
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    background-color: var(--color-4);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.active {
+    box-shadow: 0 0 15px 5px rgba(255,255,255,0.75);
+}
+
+.btn {
+    display: block;
+    margin: 15px auto 10px;
+    font-family: inherit;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--color-5);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-large {
+    padding: 20px 30px;
+}
+
+.don-btn {
+    width: 110px;
+}
+
+.gift {
+    display: flex;
+    justify-content: space-around;
+    width: 110px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.gift-btn {
+    background: none;
+    border: none;
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.end-btn {
+    background-color: var(--color-4);
+    margin-top: 0;
+}
+
+.gift-price {
+    display: flex;
+    align-items: center;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
