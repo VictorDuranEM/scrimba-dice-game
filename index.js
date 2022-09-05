@@ -123,16 +123,6 @@ function increasePlayerScore(player, amount) {
 
 function goToNextTurn() {
     resetPlayerBtns(playerTurn)
-    if (playerTurn == 0) {
-        player1Dice.classList.remove("active")
-        player2Dice.classList.add("active")
-        playerTurn = 1
-    } else {
-        player2Dice.classList.remove("active")
-        player1Dice.classList.add("active")
-        playerTurn = 0
-    }
-    
     if (player1Score >= 20) {
         message.textContent = "Player 1 Won 🥳"
         updateWinCounter(0)
@@ -141,6 +131,16 @@ function goToNextTurn() {
         message.textContent = "Player 2 Won 🎉"
         updateWinCounter(1)
         showResetAndNextRoundButton()
+    } else {
+        if (playerTurn == 0) {
+            player1Dice.classList.remove("active")
+            player2Dice.classList.add("active")
+            playerTurn = 1
+        } else {
+            player2Dice.classList.remove("active")
+            player1Dice.classList.add("active")
+            playerTurn = 0
+        }
     }
 }
 
